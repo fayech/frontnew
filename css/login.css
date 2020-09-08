@@ -1,0 +1,16 @@
+
+.btn button{
+    float: right;
+    width: 567px !important;
+    margin-left: 35px;
+    margin-right: 26px;
+    text-align: center;
+}  
+img{
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    margin-left: 410px;
+    margin-bottom: 108px;
+    margin-top: 82px;
+}

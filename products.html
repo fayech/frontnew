@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+</head>
+<style>
+    body {
+        font-family: arial;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0 !important;
+    }
+
+
+    @media (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+
+        }
+    }
+
+    header {
+        padding: 30px;
+        text-align: center;
+        font-size: 1.4em;
+        background-color: #DE2A5B;
+        color: white;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+        width: 392px;
+        background-color: #ECECEC;
+    }
+
+    nav {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        left: -18px;
+    }
+
+
+
+
+    .map {
+        top: 127px;
+        left: 165px;
+        width: 717px;
+        height: 375px;
+        background-color: #dddd;
+        border-radius: 38px;
+        opacity: 1;
+        background-image: url("images/map2.png");
+        margin-top: 111px;
+
+    }
+
+    .column {
+        top: 157px;
+        left: 908px;
+        width: 163px;
+        height: 178px;
+        background: #ffffff 0% 0% no-repeat;
+        border-radius: 71px;
+        opacity: 1;
+        margin: 5px !important;
+        border-radius: 37px;
+        opacity: 1;
+    }
+
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        /* text-align: center; */
+        /* text-decoration: none; */
+        /* display: inline-block; */
+        /* font-size: 16px; */
+        /* margin: 4px 2px; */
+        /* cursor: pointer; */
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #DE2A5B;
+        border-radius: 30px;
+        opacity: 1;
+    }
+
+    .input,
+    .textarea {
+        width: auto !important;
+    }
+
+    .field {
+        margin-top: 23px;
+
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .btn button {
+        background-color: #DE2A5B;
+        width: 158px !important;
+        margin-left: 35px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        padding-top: 21px;
+    }
+
+    .home {
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        width: 50%;
+    }
+
+    .icon {
+
+        display: inline;
+    }
+
+    .example {
+  background-color: #eee;
+  height: 70vh;
+  border: 1px dotted black;
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
+
+<body class="container">
+    <header>
+        <div class="icon">
+
+            <div class="home" style="margin-top: 184px;
+margin-left: 38px;">
+                <img src="images/home-24px (1).png" style="margin-top: 2px;">
+            </div>
+            <div class="shop" style="margin-top: 33px;">
+                <img src="images/shopping_cart-24px-1.png" style="margin-top: 2px;">
+            </div>
+            <div class="logout" style="margin-top: 33px;">
+                <img src="images/sensor_door-24px (1).png" style="margin-top: 2px;">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="panier">
+            <img src="images/shopping_cart-24px.png" style="float: right;">
+
+        </div>
+        <div class="map">
+        </div>
+    </nav>
+    <main>
+        <h1>Main</h1>
+        <div class="field has-addons">
+            <input class="input is-rounded" type="text" placeholder="Search">
+        </div>
+        <div class="btn">
+            <button class="button is-large is-fullwidth is-danger" style="padding-bottom:25px; background-color: #fafafa;
+        border-color: transparent;
+        color: #d70b0b;">products</button>
+
+            <button class="button is-large is-fullwidth " style="padding-bottom:25px;">List</button>
+
+        </div>
+        <div class="example">
+            <div class="columns is-desktop" style="margin-top: 31px;">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+                </div>
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+
+                </div>
+
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+
+
+                </div>
+
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+
+
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+            <div class="columns is-desktop">
+                <div class="column">
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+
+
+                </div>
+                <div class="column">
+
+                    <h1 style="font-weight: bold;
+      text-align: center;
+      size: a5;
+      /* margin-bottom: 1em; */
+    font-size: -12.7em !important;">Shampoo anti-dandruff</h1>
+                    <img src="images/coca.png" style="height: auto;
+    max-width: 100%;
+    margin-left: 62px;">
+                    <p style="color: #DE2A5B;
+  margin-top: 11px;
+  margin-left: 49px">12TND</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</html>
