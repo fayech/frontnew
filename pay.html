@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+</head>
+<style>
+    body {
+        font-family: arial;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+    @media (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+
+        }
+    }
+
+    header {
+        text-align: center;
+        font-size: 1.4em;
+        background-color: #DE2A5B;
+        color: white;
+        width: 64%;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+        width: 392px;
+        background-color: #ECECEC;
+    }
+
+    nav {
+
+        background-color: #EAEAEA;
+        opacity: 1;
+        /* padding: 20px; */
+        border-radius: 20px;
+        position: relative;
+        left: -88px;
+        width: 1245px;
+
+    }
+
+    .example {
+        background-color: #eee;
+        height: 70vh;
+        border: 1px dotted black;
+        overflow-y: scroll;
+        background-color: #fff;
+        border-radius: 50px;
+        /* Add the ability to scroll */
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .example::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .example {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .column p {
+        font: bold;
+        letter-spacing: 0.24px;
+        opacity: 1;
+    }
+
+
+
+    .column {
+        top: 157px;
+        left: 908px;
+        width: 163px;
+        height: 103px;
+        background: #ffffff 0% 0% no-repeat;
+        border-radius: 71px;
+        opacity: 1;
+        margin: 5px !important;
+        border-radius: 37px;
+        opacity: 1;
+    }
+
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        /* text-align: center; */
+        /* text-decoration: none; */
+        /* display: inline-block; */
+        /* font-size: 16px; */
+        /* margin: 4px 2px; */
+        /* cursor: pointer; */
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #DE2A5B;
+        border-radius: 30px;
+        opacity: 1;
+    }
+
+    .input,
+    .textarea {
+        width: auto !important;
+    }
+
+    .field {
+        margin-top: 23px;
+
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .btn button {
+        background-color: #DE2A5B;
+        width: 158px !important;
+        margin-left: 35px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        padding-top: 21px;
+    }
+
+    .btn1 {
+
+        margin-right: 216px;
+        display: flex;
+        flex-direction: row;
+       
+
+    }
+
+    .btn1 button {
+        background-color: #DE2A5B;
+        width: 158px !important;
+        margin-left: 35px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        padding-top: 21px;
+
+    }
+
+    .home {
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        width: 50%;
+    }
+
+    .icon {
+
+        display: inline;
+    }
+</style>
+
+<body class="container">
+
+
+    <header class="is-four-fifths">
+
+        <div class="icon">
+
+            <div class="home" style="margin-top: 184px;
+margin-left: 38px;">
+                <img src="images/home-24px (1).png" style="margin-top: 2px;">
+            </div>
+            <div class="shop" style="margin-top: 33px;">
+                <img src="images/shopping_cart-24px-1.png" style="margin-top: 2px;">
+            </div>
+            <div class="logout" style="margin-top: 33px;">
+                <img src="images/sensor_door-24px (1).png" style="margin-top: 2px;">
+            </div>
+        </div>
+    </header>
+
+    <nav style="padding: 20px;">
+
+
+
+        <main>
+            <h1>Main</h1>
+            <div class="field has-addons">
+                <input class="input is-rounded" type="text" placeholder="Search">
+            </div>
+
+
+        </main>
+
+
+
+
+        <div style="display:-webkit-box; flex-direction: row; justify-content: center; align-items:center; width: 100%;">
+            <div class="example" style="width: 30%; margin-left: 35px;     margin-bottom: 2.2rem;">
+                <h1 style="text-align: center; font:normal normal bolder 36px/24p; letter-spacing: 0.36px; ">Order
+                    Summery</h1>
+                    <div class="columns is-vcentered" style="margin: 20px;">
+
+                        <div class="column" style="height: auto;">
+                            <div class="img"
+                                style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                                <img src="images/coca.png">
+                                <div style="margin-right: 63px;
+                       float: right;">
+                                    <h1>Head & Shoulders</h1>
+                                    <div class="detail">
+                                        <div class="row">
+    
+    
+    
+                                        </div>
+    
+                                        <a href="" style="    margin-right: -48px;
+                              float: right;
+                              width: 26px;
+                              margin-top: -25px;
+                          ">123dt</a>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+    
+    
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </div>
+                <!---div produit-->
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+                   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+                          float: right;
+                          width: 26px;
+                          margin-top: -25px;
+                      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--end of produit-->
+
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+                   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+                          float: right;
+                          width: 26px;
+                          margin-top: -25px;
+                      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+                <!---div produit-->
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+                   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+                          float: right;
+                          width: 26px;
+                          margin-top: -25px;
+                      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--end of produit-->
+
+                <!---div produit-->
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+          float: right;
+          width: 26px;
+          margin-top: -25px;
+      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--end of produit-->
+         <!---div produit-->
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+          float: right;
+          width: 26px;
+          margin-top: -25px;
+      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--end of produit-->
+                         <!---div produit-->
+                         <div class="columns is-vcentered" style="margin: 20px;">
+
+                            <div class="column" style="height: auto;">
+                                <div class="img"
+                                    style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                                    <img src="images/coca.png">
+                                    <div style="margin-right: 63px;
+           float: right;">
+                                        <h1>Head & Shoulders</h1>
+                                        <div class="detail">
+                                            <div class="row">
+        
+        
+        
+                                            </div>
+        
+                                            <a href="" style="    margin-right: -48px;
+                  float: right;
+                  width: 26px;
+                  margin-top: -25px;
+              ">123dt</a>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+        
+        
+                            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        </div>
+                        <!--end of produit-->         <!---div produit-->
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <img src="images/coca.png">
+                            <div style="margin-right: 63px;
+   float: right;">
+                                <h1>Head & Shoulders</h1>
+                                <div class="detail">
+                                    <div class="row">
+
+
+
+                                    </div>
+
+                                    <a href="" style="    margin-right: -48px;
+          float: right;
+          width: 26px;
+          margin-top: -25px;
+      ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+                <!--end of produit-->
+
+                <hr style="  border-top: 1px dashed red;">
+                <div class="columns is-vcentered" style="margin: 20px;">
+
+                    <div class="column" style="height: auto;">
+                        <div class="img"
+                            style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                            <p>Order total</p>
+                            <div style="margin-right: 63px;
+   float: right;">
+                                <div class="detail">
+
+                                    <a href="" style="    margin-right: -48px;
+          float: right;
+          width: 26px;
+          color: #de2a5b;          ">123dt</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+   
+
+            <div class="from" style="    /* background-color: #DE2A5B; */
+            width: 70%;
+            /* height: 200px; */
+            /* margin-left: 33px; */
+            text-align: center;
+            margin-top: 12%;"><div>
+         
+
+         <h1 style="margin-top: -142px;
+         padding: 64px;
+         font-size: 63px;">Credit card info</h1>
+
+        
+            <h1>Credit card info</h1>
+                <div >
+                <div class="field">
+                  <label>Exp date</label>
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Medium input">
+                  </div>
+                </div>
+                <div class="field">
+                  <label>CVC</label>
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Medium input">
+                  </div>
+                </div>
+              </div>
+               
+                  <div style="display: flex;
+                  flex-direction: row; margin-left: 208px;">
+                  <div class="field" >
+                    <label>Exp date</label>
+                    <div class="control">
+                      <input class="input is-medium" type="text" placeholder="Medium input" style="padding-left: 23px;">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>CVC</label>
+                    <div class="control">
+                      <input class="input is-medium" type="text" placeholder="Medium input" style="MARGIN-LEFT: 28px;">
+                    </div>
+                  </div>
+                </div>
+
+            <div class="btn1" style="margin-left: 40%; padding-top: 19vh;">
+               
+                <button class="button is-large is-fullwidth " style="padding-bottom:25px;">checkout</button>
+    
+            </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </nav>
+
+</body>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</html>
